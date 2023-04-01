@@ -209,7 +209,7 @@ function Swap({ isConnected, address }) {
 
   return (
     <div className={hamToggle ? 'App mobile-nav-active' : 'App'}>
-      <i className="fa fa-bars mobile-nav-toggle d-xl-none" onClick={() => setHamToggle(!hamToggle)}></i>
+      <i className="fa fa-bars mobile-nav-toggle" onClick={() => setHamToggle(!hamToggle)}></i>
 
       <div id="header">
         <div className="d-flex flex-column">

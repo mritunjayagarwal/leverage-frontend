@@ -3,7 +3,6 @@
   margin-left: 73px;
   height: 100vh;
 }
-
 /* HEADER */
 
 /*--------------------------------------------------------------
@@ -73,16 +72,6 @@
   margin-left: 150px;
   max-width: 90%;
   background: #000;
-}
-
-@media (max-width: 1199px) {
-  #header {
-    left: -300px;
-  }
-
-  #main {
-    margin-left: 0;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -160,6 +149,7 @@ i:hover{
   right: 15px;
   top: 15px;
   z-index: 9998;
+  display: none;
   border: 0;
   font-size: 24px;
   transition: all 0.4s;
@@ -174,6 +164,50 @@ i:hover{
   line-height: 0;
   border-radius: 50px;
   cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .swap-main{
+    padding-bottom: 50px;
+  }
+
+  .mobile-nav-toggle{
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+
+  header{
+    visibility: hidden;
+  }
+
+  .tradeBox{
+    width: 95% !important;
+  }
+
+  #header {
+    left: -300px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+
+  .mobile-nav-toggle{
+    display: block;
+    padding: 1em 1.5em 1em 0.65em !important;
+  }
+
+  .swap-main{
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 667px) {
+  .tradeBox{
+    width: 90%;
+  }
 }
 
 .mobile-nav-active {
@@ -460,19 +494,4 @@ header {
   font-size: 13px;
   font-weight: 300;
   color: #51596f; 
-}
-
-@media only screen and (max-width: 700px) {
-
-  header{
-    visibility: hidden;
-  }
-
-  .swap-main{
-    margin-left: 0;
-  }
-
-  .tradeBox{
-    width: 95%;
-  }
 }

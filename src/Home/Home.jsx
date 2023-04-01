@@ -40,7 +40,7 @@ const Home = () => {
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/swap">
-                                        <button type="button" className="py-2 btn-grad" style = {{ "margin-top": "-10px"}}>
+                                        <button type="button" className="py-2 btn-grad swap-button" style = {{ "margin-top": "-10px"}}>
                                             Swap
                                         </button>
                                     </Link>

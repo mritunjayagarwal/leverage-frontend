@@ -228,9 +228,9 @@ main {
 }
 
 .social-icon {
-    width: "100px";
-    height: 'auto';
-    border-radius: '50%'
+    width: 100px;
+    height: auto;
+    border-radius: 50%
 }
 
 @media only screen and (max-width: 667px) {
@@ -330,6 +330,10 @@ main {
     .social-icon {
         width: 70px;
     }
+
+    .swap-button{
+        width: 95% !important;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -346,6 +350,10 @@ main {
 
     .navbar li {
         padding: 15px 0;
+    }
+
+    .swap-button{
+        width: 97%;
     }
 
 }
