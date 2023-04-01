@@ -9,7 +9,7 @@ import socials from './socials';
 const Home = () => {
     return (
         <>
-            <header className="hero-section">
+            <div className="hero-section">
                 <nav className="navbar navbar-expand-lg py-3 px-0 m-0" style={{ position: "absolute", top: 0, left: 0, right: 0 }}>
                     <div className='container-fluid'>
                         <Link className="navbar-brand me-2" to="#">
@@ -71,7 +71,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-            </header>
+            </div>
 
             <main>
                 <section>
