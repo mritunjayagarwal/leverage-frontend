@@ -34,7 +34,7 @@ const Home = () => {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#community" className="px-3 pt-2 btn-link">
+                                    <a href="https://t.me/leverageprotocol" className="px-3 pt-2 btn-link">
                                         Community
                                     </a>
                                 </li>
@@ -60,11 +60,11 @@ const Home = () => {
                                 <button class="btn-grad">Community</button>
                             </div>
                             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-                                <a class="hero-link"
-                                    href="https://leverage-protocol.gitbook.io/leverage-protocol/"
+                                <Link class="hero-link"
+                                    to="#"
                                     style={{ color: "#000" }}>
                                     <button class="hero-btn">Documentation</button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -143,9 +143,9 @@ const Home = () => {
                             <div className='d-flex justify-content-around pb-5 socials-wrapper'>
                                 {socials.map((social) => {
                                     return <div key={social.id}>
-                                        <a href = { social.url } target="_blank">
+                                        <Link to="/swap">
                                             <img src={require(`./img/${social.icon}`)} alt="" className='social-icon' />
-                                        </a>
+                                        </Link>
                                     </div>
                                 })}
                             </div>
