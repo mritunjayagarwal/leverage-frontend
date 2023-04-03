@@ -57,7 +57,7 @@ const Home = () => {
 
                         <div class="d-flex justify-content-center">
                             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
-                                <button class="btn-grad">Community</button>
+                                <a href= "https://t.me/leverageprotocol"><button class="btn-grad">Community</button></a>
                             </div>
                             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
                                 <Link class="hero-link"
