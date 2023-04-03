@@ -1,16 +1,16 @@
 const socials = [
     {
         id: 1,
-        icon: '8.png',
-        url: 'http://www.twitter.com'
-    },
-    {
-        id: 1,
         icon: '9.png',
-        url: 'http://www.telegram.com'
+        url: 'https://twitter.com/leverageerc'
     },
     {
-        id: 1,
+        id: 2,
+        icon: '8.png',
+        url: 'https://t.me/leverageprotocol'
+    },
+    {
+        id: 3,
         icon: '10.png',
         url: 'http://www.behance.com'
     },
