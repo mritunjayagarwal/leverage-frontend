@@ -222,7 +222,7 @@ function Swap({ isConnected, address }) {
             <ul id="myMenu">
               <li>
                 <div>
-                  <Link to="#about" className="nav-link scrollto active"><i className="pl-2 fa fa-home"></i></Link>
+                  <Link to="/" className="nav-link scrollto active"><i className="pl-2 fa fa-home"></i></Link>
                 </div>
                 <div>
                   Home
@@ -230,7 +230,7 @@ function Swap({ isConnected, address }) {
               </li>
               <li className='nav-item-active'>
                 <div>
-                  <Link to="#about" className="nav-link scrollto"><i className="pl-2 fa fa-exchange"></i></Link>
+                  <Link to="/swap" className="nav-link scrollto"><i className="pl-2 fa fa-exchange"></i></Link>
                 </div>
                 <div>
                   Swap

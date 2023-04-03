@@ -53,9 +53,7 @@ const Home = () => {
                 <section>
                     <div class="text-center hero-sec">
                         <h1 class="hero-main" data-aos="fade" data-aos-duration="1000" data-aos-delay="400">Leverage Your Potential</h1>
-                        <p class="hero-para">a decentralized exchange platform that enables users to trade leading
-                            cryptocurrencies with high leverage directly from their wallets.
-                        </p>
+                        <p class="hero-para">First decentralized perpetual exchange platform with zk-SNARK tech, offering up to 20x leverage trading from wallets</p>
 
                         <div class="d-flex justify-content-center">
                             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
