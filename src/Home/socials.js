@@ -7,7 +7,7 @@ const socials = [
     {
         id: 1,
         icon: '9.png',
-        url: 'http://www.telegram.com'
+        url: 'https://t.me/leverageprotocol'
     },
     {
         id: 1,
