@@ -145,7 +145,7 @@ const Home = () => {
                             <div className='d-flex justify-content-around pb-5 socials-wrapper'>
                                 {socials.map((social) => {
                                     return <div key={social.id}>
-                                        <Link to="/swap">
+                                        <Link to={{ pathname: social.url }} target="_blank">
                                             <img src={require(`./img/${social.icon}`)} alt="" className='social-icon' />
                                         </Link>
                                     </div>
