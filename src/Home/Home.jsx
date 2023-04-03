@@ -126,9 +126,9 @@ const Home = () => {
                             <div className='col-lg-5 text-center d-flex align-items-center justify-content-center'>
                                 <div>
                                     <h1 class="hero-tag">Trade on the Go</h1>
-                                    <p class = "hero-para-sec">Trade freely from anywhere worldwide, with no
+                                    <p class = "hero-para-sec" style = {{ "margin-bottom": "50px"}}>Trade freely from anywhere worldwide, with no
                                         geographical limitations to confide</p>
-                                    <button className='btn-grad'>Launch Dapp</button>
+                                    <Link to = "/swap" className='btn-grad px-4'>Launch Dapp</Link>
                                 </div>
                             </div>
                         </div>

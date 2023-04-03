@@ -289,7 +289,7 @@ function Swap({ isConnected, address }) {
             <h4 class = "text-center trade-title">SIMPLE DEX</h4>
             <p class = "text-center trade-para">Swap tokens using Ethereum Dex</p>
           </div>
-          <div className="inputs">
+          <div className="inputs w-100">
             <Input placeholder='0'
               disabled={!prices}
               value={tokenOneAmount} onChange={changeAmount} />
