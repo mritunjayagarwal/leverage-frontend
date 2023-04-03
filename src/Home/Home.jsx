@@ -62,11 +62,11 @@ const Home = () => {
                                 <button class="btn-grad">Community</button>
                             </div>
                             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-                                <Link class="hero-link"
-                                    to="#"
+                                <a class="hero-link"
+                                    href="https://leverage-protocol.gitbook.io/leverage-protocol/"
                                     style={{ color: "#000" }}>
                                     <button class="hero-btn">Documentation</button>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -145,9 +145,9 @@ const Home = () => {
                             <div className='d-flex justify-content-around pb-5 socials-wrapper'>
                                 {socials.map((social) => {
                                     return <div key={social.id}>
-                                        <Link to={{ pathname: social.url }} target="_blank">
+                                        <a href = { social.url } target="_blank">
                                             <img src={require(`./img/${social.icon}`)} alt="" className='social-icon' />
-                                        </Link>
+                                        </a>
                                     </div>
                                 })}
                             </div>
