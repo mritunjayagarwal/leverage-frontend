@@ -29,7 +29,7 @@ const Home = () => {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#roadmap" className="px-3 pt-2 btn-link">
+                                    <a href="https://app.uniswap.org/#/swap?outputCurrency=0x86f0cdb38a853420be4dbf6a3a9a3fe0756bc701" className="px-3 pt-2 btn-link">
                                         Buy Now
                                     </a>
                                 </li>
