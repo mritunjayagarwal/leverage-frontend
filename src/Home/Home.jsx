@@ -51,19 +51,19 @@ const Home = () => {
                 </nav>
 
                 <section>
-                    <div class="text-center hero-sec">
-                        <h1 class="hero-main" data-aos="fade" data-aos-duration="1000" data-aos-delay="400">Leverage Your Potential</h1>
-                        <p class="hero-para">First decentralized perpetual exchange platform with zk-SNARK tech, offering up to 20x leverage trading from wallets <br /><br /> <span className = "mt-4">Contract Address: 0x86f0cdb38a853420be4dbf6a3a9a3fe0756bc701</span></p>
+                    <div className="text-center hero-sec">
+                        <h1 className="hero-main" data-aos="fade" data-aos-duration="1000" data-aos-delay="400">Leverage Your Potential</h1>
+                        <p className="hero-para">First decentralized perpetual exchange platform with zk-SNARK tech, offering up to 20x leverage trading from wallets <br /><br /> <span className = "mt-4">Contract Address: 0x86f0cdb38a853420be4dbf6a3a9a3fe0756bc701</span></p>
 
-                        <div class="d-flex justify-content-center">
+                        <div className="d-flex justify-content-center">
                             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
-                                <a href= "https://t.me/leverageprotocol"><button class="btn-grad">Community</button></a>
+                                <a href= "https://t.me/leverageprotocol"><button className="btn-grad">Community</button></a>
                             </div>
                             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-                                <a class="hero-link"
+                                <a className="hero-link"
                                     href="https://leverage-protocol.gitbook.io/leverage-protocol/"
                                     style={{ color: "#000" }}>
-                                    <button class="hero-btn">Documentation</button>
+                                    <button className="hero-btn">Documentation</button>
                                 </a>
                             </div>
                         </div>
