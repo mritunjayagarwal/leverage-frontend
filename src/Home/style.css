@@ -98,6 +98,11 @@ main {
     font-size: 5em;
 }
 
+.contract-address{
+    /* font-weight: 700; */
+    font-size: 1em;
+}
+
 .hero-para {
     width: 60%;
     font-size: 1.5em;
