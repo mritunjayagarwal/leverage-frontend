@@ -1,4 +1,4 @@
-import React from 'react';
+Koimport React from 'react';
 import './style.css';
 import Logo from './img/1.png';
 import { Link } from 'react-router-dom';
@@ -53,7 +53,7 @@ const Home = () => {
                 <section>
                     <div class="text-center hero-sec">
                         <h1 class="hero-main" data-aos="fade" data-aos-duration="1000" data-aos-delay="400">Leverage Your Potential</h1>
-                        <p class="hero-para">First decentralized perpetual exchange platform with zk-SNARK tech, offering up to 20x leverage trading from wallets <br /> <span>Contract Address: 0x86f0cdb38a853420be4dbf6a3a9a3fe0756bc701</span></p>
+                        <p class="hero-para">First decentralized perpetual exchange platform with zk-SNARK tech, offering up to 20x leverage trading from wallets <br /> <span class = "mt-4">Contract Address: 0x86f0cdb38a853420be4dbf6a3a9a3fe0756bc701</span></p>
 
                         <div class="d-flex justify-content-center">
                             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
