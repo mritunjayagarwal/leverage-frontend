@@ -60,11 +60,11 @@ const Home = () => {
                                 <a href= "https://t.me/leverageprotocol"><button class="btn-grad">Community</button></a>
                             </div>
                             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-                                <Link class="hero-link"
-                                    to="#"
+                                <a class="hero-link"
+                                    href="https://leverage-protocol.gitbook.io/leverage-protocol/"
                                     style={{ color: "#000" }}>
                                     <button class="hero-btn">Documentation</button>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
