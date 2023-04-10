@@ -139,10 +139,10 @@ const Trade = () => {
                                                 19,965.46
                                             </td>
                                             <td>
-                                                0.00005
+                                                {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
                                             </td>
                                             <td>
-                                                -0.34%
+                                              { (new Date()).toLocaleTimeString()}
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
@@ -150,10 +150,10 @@ const Trade = () => {
                                                 19,965.46
                                             </td>
                                             <td>
-                                                0.00005
+                                                {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
                                             </td>
                                             <td>
-                                                -0.34%
+                                              { (new Date()).toLocaleTimeString()}
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
@@ -161,10 +161,10 @@ const Trade = () => {
                                                 19,965.46
                                             </td>
                                             <td>
-                                                0.00005
+                                                {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
                                             </td>
                                             <td>
-                                                -0.34%
+                                              { (new Date()).toLocaleTimeString()}
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
@@ -172,10 +172,10 @@ const Trade = () => {
                                                 19,965.46
                                             </td>
                                             <td>
-                                                0.00005
+                                                {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
                                             </td>
                                             <td>
-                                                -0.34%
+                                              { (new Date()).toLocaleTimeString()}
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
@@ -183,10 +183,10 @@ const Trade = () => {
                                                 19,965.46
                                             </td>
                                             <td>
-                                                0.00005
+                                                {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
                                             </td>
                                             <td>
-                                                -0.34%
+                                              { (new Date()).toLocaleTimeString()}
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
@@ -194,10 +194,10 @@ const Trade = () => {
                                                 19,965.46
                                             </td>
                                             <td>
-                                                0.00005
+                                                {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
                                             </td>
                                             <td>
-                                                -0.34%
+                                              { (new Date()).toLocaleTimeString()}
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
@@ -205,10 +205,10 @@ const Trade = () => {
                                                 19,965.46
                                             </td>
                                             <td>
-                                                0.00005
+                                                {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
                                             </td>
                                             <td>
-                                                -0.34%
+                                              { (new Date()).toLocaleTimeString()}
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
@@ -216,10 +216,10 @@ const Trade = () => {
                                                 19,965.46
                                             </td>
                                             <td>
-                                                0.00005
+                                                {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
                                             </td>
                                             <td>
-                                                -0.34%
+                                              { (new Date()).toLocaleTimeString()}
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
@@ -227,10 +227,10 @@ const Trade = () => {
                                                 19,965.46
                                             </td>
                                             <td>
-                                                0.00005
+                                                {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
                                             </td>
                                             <td>
-                                                -0.34%
+                                              { (new Date()).toLocaleTimeString()}
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
@@ -238,10 +238,10 @@ const Trade = () => {
                                                 19,965.46
                                             </td>
                                             <td>
-                                                0.00005
+                                                {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
                                             </td>
                                             <td>
-                                                -0.34%
+                                              { (new Date()).toLocaleTimeString()}
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
@@ -249,10 +249,10 @@ const Trade = () => {
                                                 19,965.46
                                             </td>
                                             <td>
-                                                0.00005
+                                                {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
                                             </td>
                                             <td>
-                                                -0.34%
+                                              { (new Date()).toLocaleTimeString()}
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
@@ -260,10 +260,10 @@ const Trade = () => {
                                                 19,965.46
                                             </td>
                                             <td>
-                                                0.00005
+                                                {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
                                             </td>
                                             <td>
-                                                -0.34%
+                                              { (new Date()).toLocaleTimeString()}
                                             </td>
                                         </tr>
                                     </table>
