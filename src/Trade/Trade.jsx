@@ -11,10 +11,12 @@ let tvScriptLoadingPromise;
 
 const Trade = () => {
     const onLoadScriptRef = useRef();
+    const [chartiii, setChart] = useState('ETH');
 
     useEffect(
         () => {
             onLoadScriptRef.current = createWidget;
+            console.log(chartiii);
 
             if (!tvScriptLoadingPromise) {
                 tvScriptLoadingPromise = new Promise((resolve) => {
@@ -33,13 +35,14 @@ const Trade = () => {
             return () => onLoadScriptRef.current = null;
 
             function createWidget() {
+                const sym_val = chartiii;
                 if (document.getElementById('technical-analysis-chart-demo') && 'TradingView' in window) {
                     new window.TradingView.widget({
                         container_id: "technical-analysis-chart-demo",
                         width: "100%",
                         height: "100%",
                         autosize: true,
-                        symbol: "ETH",
+                        symbol: sym_val,
                         interval: "D",
                         timezone: "exchange",
                         theme: "dark",
@@ -56,7 +59,7 @@ const Trade = () => {
                 }
             }
         },
-        []
+        [chartiii]
     );
 
     return (
@@ -93,16 +96,18 @@ const Trade = () => {
                                 </div>
                                 <div>
                                     <table className="table">
+                                        <thead>
                                         <tr className="coin-stats-head">
                                             <th>Pair</th>
                                             <th>Price</th>
                                             <th>Change</th>
                                         </tr>
-
+                                        </thead>
+                                        <tbody>
                                         {
                                             coins.map((coin) => {
                                                 return (
-                                                    <tr className='coin-stats'>
+                                                    <tr className='coin-stats' onClick={() => setChart(coin.symbol)}>
                                                         <td>
                                                             <i className='fa fa-star'></i> {coin.symbol}/USD
                                                         </td>
@@ -118,14 +123,17 @@ const Trade = () => {
                                                 )
                                             })
                                         }
+                                        </tbody>
 
                                     </table>
                                     <table className='table'>
+                                        <thead>
                                         <tr className='coin-stats-head'>
                                             <th>Price(USDT)</th>
                                             <th>Amount(BTC)</th>
                                             <th>Time</th>
                                         </tr>
+                                        </thead>
                                         <tr className='coin-stats'>
                                             <td>
                                                 APE/BTC
