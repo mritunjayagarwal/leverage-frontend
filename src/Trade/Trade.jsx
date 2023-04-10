@@ -40,7 +40,7 @@ const Trade = () => {
                     new window.TradingView.widget({
                         container_id: "technical-analysis-chart-demo",
                         width: "100%",
-                        height: "100%",
+                        height: "50%",
                         autosize: true,
                         symbol: sym_val,
                         interval: "D",
@@ -135,8 +135,8 @@ const Trade = () => {
                                         </tr>
                                         </thead>
                                         <tr className='coin-stats'>
-                                            <td>
-                                                APE/BTC
+                                            <td class = "text-red">
+                                                19,965.46
                                             </td>
                                             <td>
                                                 0.00005
@@ -146,8 +146,8 @@ const Trade = () => {
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
-                                            <td>
-                                                APE/BTC
+                                            <td class = "text-red">
+                                                19,965.46
                                             </td>
                                             <td>
                                                 0.00005
@@ -157,8 +157,8 @@ const Trade = () => {
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
-                                            <td>
-                                                APE/BTC
+                                            <td class = "text-red">
+                                                19,965.46
                                             </td>
                                             <td>
                                                 0.00005
@@ -168,8 +168,8 @@ const Trade = () => {
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
-                                            <td>
-                                                APE/BTC
+                                            <td class = "text-red">
+                                                19,965.46
                                             </td>
                                             <td>
                                                 0.00005
@@ -179,8 +179,8 @@ const Trade = () => {
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
-                                            <td>
-                                                APE/BTC
+                                            <td class = "text-red">
+                                                19,965.46
                                             </td>
                                             <td>
                                                 0.00005
@@ -190,8 +190,74 @@ const Trade = () => {
                                             </td>
                                         </tr>
                                         <tr className='coin-stats'>
+                                            <td class = "text-red">
+                                                19,965.46
+                                            </td>
                                             <td>
-                                                APE/BTC
+                                                0.00005
+                                            </td>
+                                            <td>
+                                                -0.34%
+                                            </td>
+                                        </tr>
+                                        <tr className='coin-stats'>
+                                            <td class = "text-red">
+                                                19,965.46
+                                            </td>
+                                            <td>
+                                                0.00005
+                                            </td>
+                                            <td>
+                                                -0.34%
+                                            </td>
+                                        </tr>
+                                        <tr className='coin-stats'>
+                                            <td class = "text-red">
+                                                19,965.46
+                                            </td>
+                                            <td>
+                                                0.00005
+                                            </td>
+                                            <td>
+                                                -0.34%
+                                            </td>
+                                        </tr>
+                                        <tr className='coin-stats'>
+                                            <td class = "text-red">
+                                                19,965.46
+                                            </td>
+                                            <td>
+                                                0.00005
+                                            </td>
+                                            <td>
+                                                -0.34%
+                                            </td>
+                                        </tr>
+                                        <tr className='coin-stats'>
+                                            <td class = "text-red">
+                                                19,965.46
+                                            </td>
+                                            <td>
+                                                0.00005
+                                            </td>
+                                            <td>
+                                                -0.34%
+                                            </td>
+                                        </tr>
+                                        <tr className='coin-stats'>
+                                            <td class = "text-red">
+                                                19,965.46
+                                            </td>
+                                            <td>
+                                                0.00005
+                                            </td>
+                                            <td>
+                                                -0.34%
+                                            </td>
+                                        </tr>
+                                        <tr className='coin-stats'>
+                                            <td class = "text-red">
+                                                19,965.46
                                             </td>
                                             <td>
                                                 0.00005
