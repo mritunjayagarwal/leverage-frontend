@@ -41,9 +41,9 @@ const coins = [
     },
     {
         id: '5',
-        name: 'Shiba Inu',
-        symbol: 'SHIB',
-        trade: 'SHIBUSD',
+        name: 'Polygon',
+        symbol: 'MATIC',
+        trade: 'MATICUSD',
         usd: 0.506453,
         usd_24h_change: -0.09269603161592051
     },
