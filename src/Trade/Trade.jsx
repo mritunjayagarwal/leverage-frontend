@@ -335,7 +335,7 @@ const Trade = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <p className='mt-2 m-0 w-100'>Collatral <span className='pull-right'>0.00</span></p>
+                                        <p className='mt-2 m-0 w-100'>Collateral <span className='pull-right'>0.00</span></p>
                                         <p className='m-0 w-100'>Leverage <span className='pull-right'>-</span></p>
                                         <p className='m-0 w-100'>Entry price <span className='pull-right'>$17,678</span></p>
                                         <p className='m-0 w-100'>Liq. price <span className='pull-right'>-</span></p>
