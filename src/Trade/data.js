@@ -41,9 +41,9 @@ const coins = [
     },
     {
         id: '5',
-        name: 'Tether',
-        symbol: 'USDT',
-        trade: 'USDTUSD',
+        name: 'Shiba Inu',
+        symbol: 'SHIB',
+        trade: 'SHIBUSD',
         usd: 0.506453,
         usd_24h_change: -0.09269603161592051
     },
