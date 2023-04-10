@@ -12,7 +12,7 @@ let tvScriptLoadingPromise;
 const Trade = () => {
     const onLoadScriptRef = useRef();
     const [chartiii, setChart] = useState('BTC');
-    const [chartt, setChartt] = useState('BTCUSD');
+    const [chartt, setChartt] = useState('Binance:BTCUSD');
 
     useEffect(
         () => {
@@ -107,7 +107,7 @@ const Trade = () => {
                                         {
                                             coins.map((coin) => {
                                                 return (
-                                                    <tr className='coin-stats' onClick={() => setChartt(coin.trade)}>
+                                                    <tr className='coin-stats' onClick={() => setChartt(`Binance:${coin.trade}`)}>
                                                         <td>
                                                             <i className='fa fa-star'></i> {coin.symbol}/USD
                                                         </td>
