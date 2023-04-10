@@ -238,7 +238,7 @@ function Swap({ isConnected, address }) {
               </li>
               <li>
                 <div>
-                  <Link to="#about" className="nav-link scrollto"><i className="pl-2 fa fa-line-chart"></i></Link>
+                  <Link to="/trade" className="nav-link scrollto"><i className="pl-2 fa fa-line-chart"></i></Link>
                 </div>
                 <div>
                   Trade

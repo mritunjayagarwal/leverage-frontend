@@ -1,0 +1,137 @@
+.logo-trade{
+    width: 50px;
+    height: auto;
+}
+
+.trade-main{
+    color: #fff;
+    background: #070A1D;
+    margin-top: 20px;
+}
+
+.text-green{
+    color: green
+}
+
+.text-red{
+    color: rgb(231, 55, 55);
+}
+
+.coin-search{
+    padding: 0.5em;
+}
+
+.search-input{
+    background: #2A3138;
+    border: none;
+    outline: none;
+}
+
+.table, tr, td{
+    border: none !important;
+}
+
+td, th{
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.market-main{
+    background: #20243F;
+    height: 100%;
+}
+
+.coin-stats-head{
+    font-size: 12px;
+}
+
+.coin-stats{
+    font-size: 13px;
+    text-align: left;
+}
+
+/* Graph Section */
+
+.graph-main{
+    background: #20243F;
+    height: 100%;
+}
+
+.buy-sell{
+    background: #20243F;
+    padding: 1em;
+}
+
+.buy-header{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.buy-menu-left li{
+    display: inline !important;
+    margin-right: 5px;
+    padding: 1em 0.5em;
+}
+
+.buy-menu-left > li.active{
+    background: #000;
+}
+
+.buy-menu-sub li{
+    display: inline;
+    color: rgba(255,255,255,0.5);
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.buy-input-group{
+    width: 100%;
+    background: #181818;
+    display: flex;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.buy-price-input{
+    flex: 1;
+    background: #181818;
+    border: unset !important;
+    outline: unset !important;
+}
+
+.available-currency{
+    font-size: 15px;
+}
+
+/* Trae box */
+
+.trade-box-main{
+    background: #20243F;
+    padding: 1em;
+}
+
+.input-trade-values{
+    background: #353750 !important;
+    padding: 20px 1em;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 10px;
+    border: unset
+}
+
+.asset-one-trade{
+    margin-top: -20px;
+    background: none;
+    color: #eee;
+}
+.asset-two-trade{
+    margin-top: -40px;
+    background: none;
+    color: #eee;
+}
+
+.switchButton-trade{
+    margin-top: -30px;
+}
