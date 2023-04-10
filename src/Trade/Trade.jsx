@@ -11,7 +11,7 @@ let tvScriptLoadingPromise;
 
 const Trade = () => {
     const onLoadScriptRef = useRef();
-    const [chartiii, setChart] = useState('ETH');
+    const [chartiii, setChart] = useState('BTC');
 
     useEffect(
         () => {
@@ -89,7 +89,7 @@ const Trade = () => {
             <div className='trade-main'>
                 <div className='mx-4 my-2'>
                     <div className='row'>
-                        <div className='col-lg-3'>
+                        <div className='col-lg-3 order-md-1 mb-3'>
                             <div className="market-main">
                                 <div className='coin-search'>
                                     <input type="text" placeholder='Search Coin' className='w-100 p-1 px-2 search-input' />
@@ -130,7 +130,7 @@ const Trade = () => {
                                         <thead>
                                         <tr className='coin-stats-head'>
                                             <th>Price(USDT)</th>
-                                            <th>Amount(BTC)</th>
+                                            <th>Amount({chartiii})</th>
                                             <th>Time</th>
                                         </tr>
                                         </thead>
@@ -294,84 +294,7 @@ const Trade = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-lg-6'>
-                            <div className='graph-main'>
-                                <div className='tradingview-widget-container'>
-                                    <div id='technical-analysis-chart-demo' />
-                                </div>
-                                <div className='buy-sell'>
-                                    <div className="buy-header">
-                                        <div className="buy-menu-left">
-                                            <ul>
-                                                <li className='active'>Spot</li>
-                                                <li>Cross 3x</li>
-                                                <li>Isolated 10x</li>
-                                                <li></li>
-                                            </ul>
-                                        </div>
-                                        <div className="buy-menu-left">
-                                            <ul>
-                                                <li>Spot</li>
-                                                <li>Cross 3x</li>
-                                                <li>Isolated 10x</li>
-                                                <li></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col-lg-6">
-                                            <ul className='buy-menu-sub'>
-                                                <li>Limit</li>
-                                                <li>Market</li>
-                                                <li>Stop-Limit</li>
-                                                <li><i className='fa fa-caret-down'></i></li>
-                                            </ul>
-                                            <p>Avlb: 0.000BTC</p>
-                                            <div className="buy-input-group">
-                                                <input type="text" className="buy-price-input" placeholder='Price' />
-                                                <div className='h-100 py-2 px-2 available-currency'>
-                                                    199 USDT
-                                                </div>
-                                            </div>
-                                            <div className="buy-input-group">
-                                                <input type="text" className="buy-price-input" placeholder='Amount' />
-                                                <div className='h-100 py-2 px-2 available-currency'>
-                                                    BTC
-                                                </div>
-                                            </div>
-                                            <div className='buy-trade-btn'>
-                                                <button className="btn btn-success w-100 py-2">Buy BTC</button>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6">
-                                            <ul className='buy-menu-sub'>
-                                                <li>Limit</li>
-                                                <li>Market</li>
-                                                <li>Stop-Limit</li>
-                                                <li><i className='fa fa-caret-down'></i></li>
-                                            </ul>
-                                            <p>Avlb: 0.000BTC</p>
-                                            <div className="buy-input-group">
-                                                <input type="text" className="buy-price-input" placeholder='Price' />
-                                                <div className='h-100 py-2 px-2 available-currency'>
-                                                    199 USDT
-                                                </div>
-                                            </div>
-                                            <div className="buy-input-group">
-                                                <input type="text" className="buy-price-input" placeholder='Amount' />
-                                                <div className='h-100 py-2 px-2 available-currency'>
-                                                    BTC
-                                                </div>
-                                            </div>
-                                            <div className='buy-trade-btn'>
-                                                <button className="btn btn-danger w-100 py-2">Sell BTC</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-lg-3'>
+                        <div className='col-lg-3 order-md-3 mb-3'>
                             <div style={{ "width": "100%" }}>
                                 <div className='trade-box-main' style={{ "width": "100%" }}>
                                     <div className="tradeBoxHeader d-flex">
@@ -403,11 +326,11 @@ const Trade = () => {
 
                                         {/* choosing asset to swap*/}
                                         <div className="assetOne asset-one-trade">
-                                            BTC
+                                            {chartiii}
                                             <DownOutlined />
                                         </div>
                                         <div className="assetTwo asset-two-trade">
-                                            BTC
+                                            {chartiii}
                                             <DownOutlined />
                                         </div>
                                     </div>
@@ -420,6 +343,83 @@ const Trade = () => {
                                     </div>
                                     <div className="mt-3 btn btn-primary m-0 w-100">
                                         Swap
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-lg-6 order-md-2 mb-3'>
+                            <div className='graph-main'>
+                                <div className='tradingview-widget-container'>
+                                    <div id='technical-analysis-chart-demo' />
+                                </div>
+                                <div className='buy-sell'>
+                                    <div className="buy-header">
+                                        <div className="buy-menu-left">
+                                            <ul>
+                                                <li className='active'>Spot</li>
+                                                <li>Cross 3x</li>
+                                                <li>Isolated 10x</li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div className="buy-menu-left">
+                                            <ul>
+                                                <li>Spot</li>
+                                                <li>Cross 3x</li>
+                                                <li>Isolated 10x</li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-lg-6">
+                                            <ul className='buy-menu-sub'>
+                                                <li>Limit</li>
+                                                <li>Market</li>
+                                                <li>Stop-Limit</li>
+                                                <li><i className='fa fa-caret-down'></i></li>
+                                            </ul>
+                                            <p>Avlb: 0.000 {chartiii}</p>
+                                            <div className="buy-input-group">
+                                                <input type="text" className="buy-price-input" placeholder='Price' />
+                                                <div className='h-100 py-2 px-2 available-currency'>
+                                                    199 USDT
+                                                </div>
+                                            </div>
+                                            <div className="buy-input-group">
+                                                <input type="text" className="buy-price-input" placeholder='Amount' />
+                                                <div className='h-100 py-2 px-2 available-currency'>
+                                                    {chartiii}
+                                                </div>
+                                            </div>
+                                            <div className='buy-trade-btn'>
+                                                <button className="btn btn-success w-100 py-2">Buy BTC</button>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-6">
+                                            <ul className='buy-menu-sub'>
+                                                <li>Limit</li>
+                                                <li>Market</li>
+                                                <li>Stop-Limit</li>
+                                                <li><i className='fa fa-caret-down'></i></li>
+                                            </ul>
+                                            <p>Avlb: 0.000 {chartiii}</p>
+                                            <div className="buy-input-group">
+                                                <input type="text" className="buy-price-input" placeholder='Price' />
+                                                <div className='h-100 py-2 px-2 available-currency'>
+                                                    199 USDT
+                                                </div>
+                                            </div>
+                                            <div className="buy-input-group">
+                                                <input type="text" className="buy-price-input" placeholder='Amount' />
+                                                <div className='h-100 py-2 px-2 available-currency'>
+                                                    {chartiii}
+                                                </div>
+                                            </div>
+                                            <div className='buy-trade-btn'>
+                                                <button className="btn btn-danger w-100 py-2">Sell BTC</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
