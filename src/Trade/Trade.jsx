@@ -100,7 +100,7 @@ const Trade = () => {
                                         <tr className="coin-stats-head">
                                             <th>Pair</th>
                                             <th>Price</th>
-                                            <th>Change</th>
+                                            <th>Change <i className='fa fa-exchange'></i></th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -136,7 +136,7 @@ const Trade = () => {
                                         </thead>
                                         <tr className='coin-stats'>
                                             <td class = "text-red">
-                                               {(Math.random() * (15 - 5 + 1) + 19965).toFixed(3)}
+                                               {(Math.random() * (3 - 1 + 1) + 28348).toFixed(3)}
                                             </td>
                                             <td>
                                                 {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
@@ -147,7 +147,7 @@ const Trade = () => {
                                         </tr>
                                         <tr className='coin-stats'>
                                             <td class = "text-red">
-                                               {(Math.random() * (15 - 5 + 1) + 19965).toFixed(3)}
+                                               {(Math.random() * (3 - 1 + 1) + 28348).toFixed(3)}
                                             </td>
                                             <td>
                                                 {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
@@ -158,7 +158,7 @@ const Trade = () => {
                                         </tr>
                                         <tr className='coin-stats'>
                                             <td class = "text-red">
-                                               {(Math.random() * (15 - 5 + 1) + 19965).toFixed(3)}
+                                               {(Math.random() * (3 - 1 + 1) + 28348).toFixed(3)}
                                             </td>
                                             <td>
                                                 {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
@@ -169,7 +169,7 @@ const Trade = () => {
                                         </tr>
                                         <tr className='coin-stats'>
                                             <td class = "text-red">
-                                               {(Math.random() * (15 - 5 + 1) + 19965).toFixed(3)}
+                                               {(Math.random() * (3 - 1 + 1) + 28348).toFixed(3)}
                                             </td>
                                             <td>
                                                 {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
@@ -180,7 +180,7 @@ const Trade = () => {
                                         </tr>
                                         <tr className='coin-stats'>
                                             <td class = "text-red">
-                                               {(Math.random() * (15 - 5 + 1) + 19965).toFixed(3)}
+                                               {(Math.random() * (3 - 1 + 1) + 28348).toFixed(3)}
                                             </td>
                                             <td>
                                                 {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
@@ -191,7 +191,7 @@ const Trade = () => {
                                         </tr>
                                         <tr className='coin-stats'>
                                             <td class = "text-red">
-                                               {(Math.random() * (15 - 5 + 1) + 19965).toFixed(3)}
+                                               {(Math.random() * (3 - 1 + 1) + 28348).toFixed(3)}
                                             </td>
                                             <td>
                                                 {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
@@ -202,7 +202,7 @@ const Trade = () => {
                                         </tr>
                                         <tr className='coin-stats'>
                                             <td class = "text-red">
-                                               {(Math.random() * (15 - 5 + 1) + 19965).toFixed(3)}
+                                               {(Math.random() * (3 - 1 + 1) + 28348).toFixed(3)}
                                             </td>
                                             <td>
                                                 {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
@@ -213,7 +213,7 @@ const Trade = () => {
                                         </tr>
                                         <tr className='coin-stats'>
                                             <td class = "text-red">
-                                               {(Math.random() * (15 - 5 + 1) + 19965).toFixed(3)}
+                                               {(Math.random() * (3 - 1 + 1) + 28348).toFixed(3)}
                                             </td>
                                             <td>
                                                 {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
@@ -224,7 +224,7 @@ const Trade = () => {
                                         </tr>
                                         <tr className='coin-stats'>
                                             <td class = "text-red">
-                                               {(Math.random() * (15 - 5 + 1) + 19965).toFixed(3)}
+                                               {(Math.random() * (3 - 1 + 1) + 28348).toFixed(3)}
                                             </td>
                                             <td>
                                                 {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
@@ -235,7 +235,7 @@ const Trade = () => {
                                         </tr>
                                         <tr className='coin-stats'>
                                             <td class = "text-red">
-                                               {(Math.random() * (15 - 5 + 1) + 19965).toFixed(3)}
+                                               {(Math.random() * (3 - 1 + 1) + 28348).toFixed(3)}
                                             </td>
                                             <td>
                                                 {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
@@ -246,7 +246,7 @@ const Trade = () => {
                                         </tr>
                                         <tr className='coin-stats'>
                                             <td class = "text-red">
-                                               {(Math.random() * (15 - 5 + 1) + 19965).toFixed(3)}
+                                               {(Math.random() * (3 - 1 + 1) + 28348).toFixed(3)}
                                             </td>
                                             <td>
                                                 {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
@@ -257,7 +257,7 @@ const Trade = () => {
                                         </tr>
                                         <tr className='coin-stats'>
                                             <td class = "text-red">
-                                               {(Math.random() * (15 - 5 + 1) + 19965).toFixed(3)}
+                                               {(Math.random() * (3 - 1 + 1) + 28348).toFixed(3)}
                                             </td>
                                             <td>
                                                 {(Math.random() * (2 - 0 + 1) + 0).toFixed(6)}
