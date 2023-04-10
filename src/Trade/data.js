@@ -3,6 +3,7 @@ const coins = [
         id: '1',
         name: 'bitcoin',
         symbol: 'BTC',
+        trade: 'BTCUSD',
         usd: 28348,
         usd_24h_change: 1.5321285763972192
     },
@@ -10,6 +11,7 @@ const coins = [
         id: '2',
         name: 'ethereum',
         symbol: 'ETH',
+        trade: 'ETHUSD',
         usd: 1861.38,
         usd_24h_change: 1.4484656830159377
     },
@@ -17,6 +19,7 @@ const coins = [
         id: '3',
         name: 'uniswap',
         symbol: 'UNI',
+        trade: 'UNIUSD',
         usd: 5.87,
         usd_24h_change: 0.46343684149149605
     },
@@ -24,6 +27,7 @@ const coins = [
         id: '4',
         name: 'litecoin',
         symbol: 'LTC',
+        trade: 'LTCUSD',
         usd: 90.64,
         usd_24h_change: 0.6260265072004563
     },
@@ -31,6 +35,7 @@ const coins = [
         id: '5',
         name: 'Ripple',
         symbol: 'XRP',
+        trade: 'XRPUSD',
         usd: 0.506453,
         usd_24h_change: 0.6260265072004563
     },
@@ -38,6 +43,7 @@ const coins = [
         id: '5',
         name: 'Tether',
         symbol: 'USDT',
+        trade: 'USDTUSD',
         usd: 0.506453,
         usd_24h_change: -0.09269603161592051
     },
@@ -45,6 +51,7 @@ const coins = [
         id: '6',
         name: 'Cardano',
         symbol: 'XLM',
+        trade: 'XLMUSD',
         usd: 0.388373,
         usd_24h_change: 1.5321285763972192
     },

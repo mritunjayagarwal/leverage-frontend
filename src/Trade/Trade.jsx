@@ -12,11 +12,11 @@ let tvScriptLoadingPromise;
 const Trade = () => {
     const onLoadScriptRef = useRef();
     const [chartiii, setChart] = useState('BTC');
+    const [chartt, setChartt] = useState('BTCUSD');
 
     useEffect(
         () => {
             onLoadScriptRef.current = createWidget;
-            console.log(chartiii);
 
             if (!tvScriptLoadingPromise) {
                 tvScriptLoadingPromise = new Promise((resolve) => {
@@ -35,7 +35,7 @@ const Trade = () => {
             return () => onLoadScriptRef.current = null;
 
             function createWidget() {
-                const sym_val = chartiii;
+                const sym_val = chartt;
                 if (document.getElementById('technical-analysis-chart-demo') && 'TradingView' in window) {
                     new window.TradingView.widget({
                         container_id: "technical-analysis-chart-demo",
@@ -59,7 +59,7 @@ const Trade = () => {
                 }
             }
         },
-        [chartiii]
+        [chartt]
     );
 
     return (
@@ -107,7 +107,7 @@ const Trade = () => {
                                         {
                                             coins.map((coin) => {
                                                 return (
-                                                    <tr className='coin-stats' onClick={() => setChart(coin.symbol)}>
+                                                    <tr className='coin-stats' onClick={() => setChartt(coin.trade)}>
                                                         <td>
                                                             <i className='fa fa-star'></i> {coin.symbol}/USD
                                                         </td>
