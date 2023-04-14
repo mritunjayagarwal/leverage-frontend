@@ -12,7 +12,7 @@ const socials = [
     {
         id: 3,
         icon: '10.png',
-        url: 'http://www.behance.com'
+        url: '#'
     },
 ];
 
