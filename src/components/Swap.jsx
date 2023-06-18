@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Header from './Header';
+import Logo from '../Home/img/1.png';
 import { useConnect, useAccount, useDisconnect } from 'wagmi';
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask';
 import { Input, Popover, Radio, Modal, message } from 'antd';
@@ -132,8 +133,6 @@ function Swap({ isConnected, address }) {
     })
     let decimals = Number(`1E${tokenTwo.decimals}`);
     setTokenTwoAmount((Number(tx.data.tokenAmount) / decimals).toFixed(2));
-    console.log(tx.data.tx);
-    console.log("Heyyyyyyyyyyyyyyyyyyyyyyy")
     setTxDetails(tx.data.tx)
   }
 
@@ -209,7 +208,54 @@ function Swap({ isConnected, address }) {
   )
 
   return (
-    <div>
+    <div className={hamToggle ? 'App mobile-nav-active' : 'App'}>
+      <i className="fa fa-bars mobile-nav-toggle" onClick={() => setHamToggle(!hamToggle)}></i>
+
+      <div id="header">
+        <div className="d-flex flex-column">
+
+          <div className="pt-2">
+            <Link to="/"><img src={Logo} alt="" className="img-fluid" /></Link>
+          </div>
+
+          <nav id="navbar" className="nav-menu navbar">
+            <ul id="myMenu">
+              <li>
+                <div>
+                  <Link to="/" className="nav-link scrollto active"><i className="pl-2 fa fa-home"></i></Link>
+                </div>
+                <div>
+                  Home
+                </div>
+              </li>
+              <li className='nav-item-active'>
+                <div>
+                  <Link to="/swap" className="nav-link scrollto"><i className="pl-2 fa fa-exchange"></i></Link>
+                </div>
+                <div>
+                  Swap
+                </div>
+              </li>
+              <li>
+                <div>
+                  <Link to="/trade" className="nav-link scrollto"><i className="pl-2 fa fa-line-chart"></i></Link>
+                </div>
+                <div>
+                  Trade
+                </div>
+              </li>
+              <li>
+                <div className="pl-2">
+                  <Link to="#about" className="nav-link scrollto"><i className="pl-2 fa fa-dollar"></i></Link>
+                </div>
+                <div>
+                  Wallet
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <div className='swap-main'>
         <Modal
           open={isOpen}
@@ -240,61 +286,35 @@ function Swap({ isConnected, address }) {
           isConnected={isConnected} address={address} />
         <div className="tradeBox">
           <div className="tradeBoxHeader">
-            <h4 class="text-center trade-title text-white">Swap</h4>
+            <h4 class = "text-center trade-title">SIMPLE DEX</h4>
+            <p class = "text-center trade-para">Swap tokens using Ethereum Dex</p>
           </div>
-          <div class="w-100">
-            <h5>From</h5>
-            <div class="inputs row">
-              <div style={{ "flex": 1, "padding": "1em" }} className="col-lg-6">
-                <div class="asset-wrapper">
-                  <div className="asset-input">
-                    <div className="assetOne" onClick={() => openModal(1)}>
-                      <div>
-                        <img src={tokenOne.img} className="assetLogo" />
-                        {tokenOne.ticker}
-                      </div>
-                      <DownOutlined />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div style={{ "flex": 1, "padding": "1em" }} className='col-lg-6'>
-                <div className='asset-wrapper'>
-                  <div className='asset-input'>
-                    <input placeholder='Enter Amount'
-                      disabled={!prices}
-                      value={tokenOneAmount} onChange={changeAmount} />
-                  </div>
-                </div>
-              </div>
+          <div className="inputs w-100">
+            <Input placeholder='0'
+              disabled={!prices}
+              value={tokenOneAmount} onChange={changeAmount} />
+            <Input placeholder="0" value={tokenTwoAmount} disabled={true} />
+
+            <div className="switchButton" onClick={switchTokens}>
+              <ArrowDownOutlined className='switchArrow' />
             </div>
-            <h5>To</h5>
-            <div class="inputs row">
-              <div style={{ "flex": 1, "padding": "1em" }} className="col-lg-6">
-                <div className="asset-wrapper">
-                  <div className="asset-input">
-                    <div className="assetTwo" onClick={() => openModal(2)}>
-                      <div>
-                        <img src={tokenTwo.img} className="assetLogo" />
-                        {tokenTwo.ticker}
-                      </div>
-                      <DownOutlined />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div style={{ "flex": 1, "padding": "1em" }} className="col-lg-6">
-                <div class="asset-wrapper">
-                  <div class="asset-input">
-                    <input placeholder="0" value={tokenTwoAmount} disabled={true} />
-                  </div>
-                </div>
-              </div>
+
+
+            {/* choosing asset to swap*/}
+            <div className="assetOne" onClick={() => openModal(1)}>
+              <img src={tokenOne.img} className="assetLogo" />
+              {tokenOne.ticker}
+              <DownOutlined />
+            </div>
+            <div className="assetTwo" onClick={() => openModal(2)}>
+              <img src={tokenTwo.img} className="assetLogo" />
+              {tokenTwo.ticker}
+              <DownOutlined />
             </div>
           </div>
 
           <div className='slippage'>
-            <h4 class = "text-white">Slippage Tolerance</h4>
+            <h4>Slippage Tolerance</h4>
             {settings}
           </div>
 
