@@ -1,7 +1,6 @@
 
 import React, { useEffect, useState, useRef } from 'react';
 import './style.css';
-import Logo from '../Home/img/1.png';
 import coins from './data';
 import { Input, Popover, Radio, Modal, message } from 'antd';
 import { ArrowDownOutlined, DownOutlined, SettingOutlined } from '@ant-design/icons'

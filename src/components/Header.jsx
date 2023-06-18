@@ -8,8 +8,8 @@ function Header({address, isConnected, connect, disconnect}) {
     <header>
       <div className="leftH">
         
-        <Link to="/" className="link">
-          <div className="headerItem">Leverage Protocol</div>
+        <Link to="/">
+          <div className="headerItem">Crypto</div>
         </Link>
       </div>
 
